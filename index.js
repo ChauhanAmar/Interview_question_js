@@ -77,3 +77,65 @@ Properties are identified using key values. A key value is either a String value
 //     eyeColor: "black"
 //   };
 //   console.log(person);
+
+//Question no.3 & 11
+//Operators, operand & Expression in JS
+//   5+20 //expression
+// 5 & 20 is operand
+// + is operator
+//1. Assignment operator
+//= is the aasignment operator
+
+//2. Arithmatic operator
+//+, -, *, /, %
+// let a=50;
+// let b=12;
+// console.log(a+b, a-b, a*b, a/b);
+
+// //Modulo operator %(result the remainder)
+// console.log(a%b);
+
+//3. Comparision operator
+//(==, <, >, <=, >=)
+// let a="Aman";
+// let b="Chauhan";
+// let c=22;
+// console.log(c==22); //true
+// if(a>b)//if(a==b)
+// {
+//     console.log("true");
+// }else
+// {
+//     console.log("Not");
+//}
+
+//4. Logical Operator
+//AND(&&) conjuction
+//OR(||) Disjuction
+//NOT(!)
+// let a="Aman";
+// let b="Chauhan";
+// //let c=22;
+
+// console.log(a&&b&&c);
+
+// const a = true, b = false;
+// const c = 4;
+
+// // logical AND
+// console.log(a && a); // true
+// console.log(a && b);  // false
+
+// console.log((c > 2) && (c < 2)); // false
+
+//OR operator
+
+// const a = true, b = false, c = 4;
+// console.log(a || b); // true
+// console.log(b || b); // false
+// console.log((c>2) || (c<2)); // true
+
+// //NOT operator
+// const a = true, b = false;
+// console.log(!a); // false
+// console.log(!b); // true
