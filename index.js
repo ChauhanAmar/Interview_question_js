@@ -139,3 +139,62 @@ Properties are identified using key values. A key value is either a String value
 // const a = true, b = false;
 // console.log(!a); // false
 // console.log(!b); // true
+
+//Question 4. Function in JS
+/* --A JavaScript function is a block of code designed to perform a particular task.
+
+    A JavaScript function is executed when "something" invokes it (calls it).
+    A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables)
+*/
+// function myFunction(p1, p2) {
+//     return p1 * p2;   // The function returns the product of p1 and p2
+//   }
+//   myFunction(2, 3); //call
+  //console.log(myFunction);
+
+
+  //Question No.5  Loop in JavaScript
+  //For loop
+  //While loop
+  //Do while loop
+
+  //For loop
+//   for(let i=1;i<=10;i++){
+//       console.log(i);
+//   }
+
+  //While loop
+// let i=0;
+//   while(i<=10)
+// {
+//     console.log(i);
+//     i++;
+// }
+
+//do while loop
+// let i=0;
+  
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while(i<=10);
+
+//Question No.6
+//Array in JavaScript
+//An array is a special variable, which can hold more than one value.
+//If you have a list of items (a list of car names, for example), storing the cars in single variables.
+//Using an array literal is the easiest way to create a JavaScript Array.
+
+// const array_name = [item1, item2, item3, etc]; 
+
+//Spaces and line breaks are not important. A declaration can span multiple lines:
+// const cars = [
+//     "Saab",
+//     "Volvo",
+//     "BMW"
+//   ];
+
+//   console.log(cars);  //[ 'Saab', 'Volvo', 'BMW' ]
