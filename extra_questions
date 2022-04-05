@@ -1,0 +1,22 @@
+// const http=require("http");
+// http.createServer(function(req,res){             //Server create code
+//     res.write("server ready");
+//     res.end();
+// }).listen(8000);
+
+// //Object in Array
+// const myArr=[
+//     {name:"Amar",
+//      lname:"Chauhan"
+//     },{name:"Arvind",
+//     lname:"Chauhan1"
+// },{
+//     name:"Aman",
+//     lname:"Chauhan2"
+// },{
+//     name:"Naman",
+//     lname:"Singh"
+// }];
+// for(var i=0;i<=myArr.length;i++){   //if only print name without repeating for(var i=myArr.length;i<=myArr.length;i++)
+//     console.log(myArr[0].name);
+// }
