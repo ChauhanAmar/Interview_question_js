@@ -198,3 +198,157 @@ Properties are identified using key values. A key value is either a String value
 //   ];
 
 //   console.log(cars);  //[ 'Saab', 'Volvo', 'BMW' ]
+
+//Array methods in JavaScript
+//Traversal of an Array
+// var newArr=['amar','kumar','singh'];
+// //console.log(newArr[1]);
+// //length of element
+// //console.log(newArr.length);
+// //for last element
+// //console.log(newArr.length-1);
+
+// //use for loop to nagivate
+// for(var i=0;i<newArr;i++){
+// console.log(newArr[i]);
+//}
+
+//Methods in array
+//push(),pop(),shift(),unshift()
+
+//push()     //add last one
+// const myArr=['A','B','C','D'];
+// //console.log(myArr);
+// const newMyArr=myArr.push('E');    //[ 'A', 'B', 'C', 'D', 'E' ]
+// console.log(myArr);
+
+//pop()    //remove last one
+// const myArr=['A','B','C','D'];
+// //console.log(myArr);
+// const newMyArr=myArr.pop('E');        //[ 'A', 'B', 'C' ]
+// console.log(myArr);
+
+//unshift()      //add first one
+// const myArr=['A','B','C','D'];
+// //console.log(myArr);
+// const newMyArr=myArr.unshift('E');     //[ 'E', 'A', 'B', 'C', 'D' ]
+// console.log(myArr);
+
+//shift()       //remove first one
+// const myArr=['A','B','C','D'];
+// //console.log(myArr);
+// const newMyArr=myArr.shift('E');     //[ 'B', 'C', 'D' ]
+// console.log(myArr);
+
+
+//slice(start index, delete, add) array method in js
+// const myArr=['A','B','C','D'];
+// //console.log(myArr);
+// const newMyArr=myArr.splice(0,1,'F');     //[ 'F', 'B', 'C', 'D' ]
+// console.log(myArr);
+
+//indexOf method (always return -1)    //use for update element
+// const myArr=['A','B','C','D'];
+// const indexOfArr=myArr.indexOf('B');
+// if(indexOfArr !=-1){
+// const updateArr=myArr.splice(indexOfArr,1,'BB');      //[ 'A', 'BB', 'C', 'D' ]
+// console.log(myArr);
+// }else{
+//   console.log("No data found");
+// }
+
+//imp Array methods 
+//map(),reduce(),filter()
+
+//map() returns a new array containing the result of calling the function on every element in this array.
+// const array=[1,4,9,16,25];
+// let newArr=array.map((curElm, index,arr)=>{
+//   return curElm>9;
+// })
+// console.log(array);     //[ 1, 4, 9, 16, 25 ]
+// console.log(newArr);    //[ false, false, false, true, true ]
+//exp-2
+// const array=[1,4,9,16,25];
+// let newArr=array.map((curElm, index,arr)=>{
+//   return `Index number= ${index} and the value is ${curElm} belong to ${arr}`;
+// })
+// //console.log(array);  
+// console.log(newArr);
+//output
+// [
+//   'Index number= 0 and the value is 1 belong to 1,4,9,16,25',
+//   'Index number= 1 and the value is 4 belong to 1,4,9,16,25',
+//   'Index number= 2 and the value is 9 belong to 1,4,9,16,25',
+//   'Index number= 3 and the value is 16 belong to 1,4,9,16,25',
+//   'Index number= 4 and the value is 25 belong to 1,4,9,16,25'
+// ]
+
+// // find the root by map()
+// const arr=[1,4,9,16,25];
+// let newArr=arr.map((curElm)=>{
+//   return Math.sqrt(curElm);
+// })
+// console.log(newArr);       //[ 1, 2, 3, 4, 5 ]
+
+//Filter()
+// const arr=[1,4,9,16,25];
+// let newArr=arr.map((curElm)=>{
+//   return curElm*2;
+// }).filter((curElm)=>{
+//   return curElm>9;
+// })
+// console.log(newArr);        //[ 18, 32, 50 ]
+
+//Reduce() method   //Not use in ES2020
+/*   -- The Reduce() method executes a reducer function (that you provide) on each element of array, 
+resulting in single output value.
+
+The reducer function takes four arguments:
+1. Accumulator
+2. Current value
+3. Current index
+4. Source Array
+*/
+
+// let arr=[5,6,3];
+// let sum=arr.reduce((accumulator, curElm, index,arr)=>{
+//   // return accumulator=curElm;       //3
+//   // return accumulator +=curElm;        //14 
+//   //return accumulator *=curElm;       //-4
+//   return accumulator *=curElm;      //90
+// },7)    //if add any previous number
+// console.log(sum);   
+
+
+//How to flatten an Array
+// //Converting 2D and 3D array to 1D array...
+// const arr=[
+//   ['zone1','zone2'],
+//   ['zone3','zone4'],
+//   ['zone5','zone6']
+// ];
+// let flatArr=arr.reduce((accumulator, curValue)=>{
+//   return accumulator.concat(curValue);
+// })
+// console.log(flatArr);    
+
+
+//  Question 7  
+
+//String in Java Script
+// A JavaScript string is zero or more charactor written insides quotes. 
+// JavaScript strings are used for storing and manuplating text.
+// You can use single or double quotes.
+// String can be created as primitives , from string literals, or as objects , using the String() constructor.
+
+// //String.prototype.length
+// let myName="Amar Chauhan";
+// console.log(myName.length);    //12
+
+// //1. Escape character
+// let mySen="my name is \"amar\" chauhan";  //if use qoutes
+// let mySen1='my name is \'amar\' chauhan';
+// let mySen2='my name is "amar" chauhan';
+// let mySen3="my name is 'amar' chauhan";
+// console.log(mySen,mySen1,mySen2,mySen3);
+
