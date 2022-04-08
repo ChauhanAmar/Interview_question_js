@@ -352,3 +352,261 @@ The reducer function takes four arguments:
 // let mySen3="my name is 'amar' chauhan";
 // console.log(mySen,mySen1,mySen2,mySen3);
 
+//2. Finding a string in a string
+//String.prototype.indexOf(Search Value[,fromIndex])
+//The indexOf() method return the index of a specified text in a string.
+//case sensitive and return -1
+
+// const myData='I am Amar Chauhan';
+// console.log(myData.indexOf('Amar'));   //5
+
+//String.prototype.lastIndexOf(search value[,fromIndex])
+/* -- Return the index within the calling string object of the last occurence of search value,
+or return -1 if not found data */
+// const myData='I am Amar Chauhan';
+// console.log(myData.lastIndexOf('Amar',8));    //5
+
+
+//Searching for string in string
+//String.prototype.search(regexp)
+/* The search() method searches a string for a specified value and return the position of the match.*/ 
+//The search() method cannot take second start position argument.
+
+// const myData="I am Amar Chauhan";
+// let newData=myData.search("Chauhan");      
+// console.log(newData);                          //10
+
+//Extracting string parts:
+//There are three methods for extracting a part--
+
+// 1. Slice(start,end)
+// 2. Substring(start,end)
+// 3. substr(start,length)
+
+//1. slice() extracts a part of a string and returns the extracted part in a new string.
+// const str="Apple Banana Kiwi";
+// let res=str.slice(0,5);
+// console.log(res);                 //Apple
+
+// const str="Apple Banana Kiwi";
+// let res=str.slice(6,-2);
+// console.log(res);               //Banana ki
+
+//2. substring(start,end)
+//Similar to slice(),
+//substring can't support negative  index.
+// const str="Apple Banana Kiwi";
+// let res=str.substring(0,5);
+// console.log(res);              //Apple
+
+
+//3. The substr() methods
+//Similar to slice(),
+//The difference is that the second parameter specifies the length of the extracted part.
+//(for back side data print)
+
+// const str="Apple Banana Kiwi";
+// //let res=str.substr(4);             //e Banana Kiwi
+// let res=str.substr(-4);              //Kiwi
+// console.log(res); 
+
+
+// Replacing() String Content
+//String.prototype.replace(searchFor, replaceWith)
+// The replace() method replaces a specified value with another value in a string.
+
+//Points to remember
+//The replace() method does not chance the string,
+//It is called on, It returns a new string.
+//By default, the replace() method replace only the first match.
+//casesensitive
+// let myData="I am amar Chauhan";
+// let replaceData=myData.replace("amar","Amar");
+// console.log(replaceData);                     // I am Amar Chauhan
+
+
+
+//Extracting String Characters
+//There are three methods 
+//1. charAt(position)
+//2. charCodeAt(position)
+//3. property access[]
+
+//1. charAt() method
+//The charAt() method returns the character at a specified index (position) in a string.
+
+// let str="Amar Chauhan";
+// let newStr=str.charAt(5);
+// console.log(newStr);               //C
+
+//2. charCodeAt() method
+//The charCodeAt() method return the unicode of the character at a specified index in string.
+//The method returns a UTF-16 code
+//(integer between 0 and 65535)
+// let str="AMAR CHAUHAN";
+// let newStr=str.charCodeAt(0);
+// console.log(newStr);              //65
+
+//or
+// let str="AMAR CHAUHAN";
+// let lastChar=str.length-1;
+// let newStr=str.charCodeAt(lastChar);
+// console.log(newStr);                          //78
+
+//3. Property Access
+//ECMAScript 5 (2009) allows property access[] on string
+
+// let str="Amar Chauhan";
+// console.log(str[1]);                      //m
+
+
+//Some other usefull methods.......
+//1. toUpperCase()
+//2. toLowerCase()
+//3. concat()
+//4. trim()
+
+// let str="Amar Chauhan";
+// console.log(str.toUpperCase());    //AMAR CHAUHAN
+// console.log(str.toLowerCase());    //amar chauhan
+
+// let str1="Amar";
+// let str2="Chauhan";
+// console.log(str1 +" " +str2);      //Amar Chauhan
+// console.log(str1.concat(str2));      //AmarChauhan
+// console.log(str1.concat(" ",str2));    //Amar Chauhan
+// console.log(`${str1} ${str2}`);         //Amar Chauhan
+
+
+//String.trim()
+//delete extra spaces
+// let str="       Amar Chauhan    ";
+// let newStr=str.trim();
+// console.log(newStr);            //Amar Chauhan
+
+//Converting string to Array
+
+//A string can be converted to an array with split() method:
+
+// let txt="a,b,c,d,e";
+// console.log(txt);
+// console.log(txt.split(",")); // by comma
+// console.log(txt.split(" "));  //by space
+// console.log(txt.split("|"));   //by pipe
+
+
+
+//DATE and TIME in JavaScript
+//Date method(get and set)
+//Time method(get and set)
+
+
+//1. Date method(get and set)
+// //new Date()
+// let currDate=new Date();
+// console.log(currDate);
+
+// console.log(new Date());
+// console.log(new Date().toLocaleString);
+// console.log(new Date().toString);
+
+//7 number specified(year,month,day,hour,minute,second, millisecond in that order)//  minimum two argument
+// let d=new Date(2022,0,5,10,33,30,50);
+// console.log(d.toLocaleString());    //5/1/2022, 10:33:30 am
+// //datestring
+// let e=new Date("October 13,2022 11:20:30");
+// console.log(e.toLocaleString());
+// //milliseconds
+// let f=new Date(1609574531453);
+// console.log(f.toLocaleString());
+
+
+//Date.now()     //show in millisecond
+// console.log(Date.now());         //1649414435490
+
+
+
+//Date get and set methods
+
+// //get()
+// let currDate=new Date();
+// console.log(currDate.getFullYear());
+// console.log(currDate.getMonth());
+// console.log(currDate.getDay());
+// console.log(currDate.getDate());
+
+//set()      //show in millisecond
+// let currDate=new Date();
+// console.log(currDate.setDate(8));
+
+
+//2. Time Method
+//get()
+
+// let currTime=new Date();
+// console.log(currTime.getTime());    //millisecond
+// console.log(currTime.getHours());    //hours
+// console.log(currTime.getMinutes());  //minutes
+// console.log(currTime.getSeconds());  //second
+// console.log(currTime.getMilliseconds());    millisecond 
+
+//set()
+
+// let currTime=new Date();
+// console.log(currTime.setTime(15));    // all show in millisecond
+// console.log(currTime.setHours(10));    
+// console.log(currTime.setMinutes(45));  
+// console.log(currTime.setSeconds(45));  
+// console.log(currTime.setMilliseconds(10));
+
+
+
+//Math object in JavaScript
+//use for mathmatic task
+//Properties
+// 1. Math.PI
+// 2. Math.round()
+// 3. Math.pow()
+// 4. Math.sqrt()
+// 5. Math.abs()
+// 6. Math.ceil()
+// 7. Math.floor()
+// 8. Math.min()
+// 9. Math.max()
+// 10. Math.random()
+// 11. Math.trunc()
+
+// //1. MAth.PI
+// console.log(Math.PI);   //3.1415
+
+// //2. Math.round()
+// let a=4.3;
+// console.log(Math.round(a));     //4
+
+// //3. Math.pow()
+// console.log(Math.pow(2,3));    //2**3=8
+
+// //4. Math.sqrt()
+// console.log(Math.sqrt(25));    //5
+
+// //5. Math.abs()  //negative to positive
+// console.log(Math.abs(-5));    //5
+
+// //6. Math.ceil()    //round the complete number //maximum
+// console.log(Math.ceil(56.1));    //57
+
+// //7. Math.floor()  // oposite ceil consoder minimum
+// console.log(Math.floor(56.8));    //56
+
+// //8. Math.min()
+// console.log(Math.min(12,155,200,89));   //12
+
+// //9. Math.max()
+// console.log(Math.max(12,155,200,89));   //200
+
+// //10. Math.random()
+// console.log(Math.round(Math.random()*10));   //random number 2,4,0,8,... 
+
+// //11. Math.trunc()
+// console.log(Math.trunc(4.8));    //4   if positive then work as Math.floor()
+// console.log(Math.trunc(-5.2));   //5    if negative the work as Math.ceil()
