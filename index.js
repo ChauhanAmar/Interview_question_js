@@ -610,3 +610,46 @@ or return -1 if not found data */
 // //11. Math.trunc()
 // console.log(Math.trunc(4.8));    //4   if positive then work as Math.floor()
 // console.log(Math.trunc(-5.2));   //5    if negative the work as Math.ceil()
+
+
+
+
+
+
+
+
+//Use twillio
+
+
+const arr=[{
+    fname:"Amar",
+    lname:"Chauhan",
+    phone:8416628452
+},
+{
+    fname:"Abhinay",
+    lname:"Kumar",
+    phone:8416628452
+},
+{
+    fname:"Hemant",
+    lname:"Singh",
+    phone:8416628452
+}];
+const myNumber=8416828100;
+
+
+// Download the helper library from https://www.twilio.com/docs/node/install
+// Find your Account SID and Auth Token at twilio.com/console
+// and set the environment variables. See http://twil.io/secure
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = require('twilio')(accountSid, authToken);
+
+      for(let i=0;i<arr.length;i++){
+        client.messages
+        .create({body: 'Hi there', from: myNumber, to:arr[i].phone})
+        .then(message => console.log(message.sid));
+  
+        console.log(arr[i].phone);
+    }
