@@ -693,3 +693,11 @@ const client = require('twilio')(accountSid, authToken);
 // You can assign your own event handler functions to HTML elements
 // You can prevent events from being sent or being handled
 // And more ...
+
+/* function mouseDown(){
+document.getElementById("myP").style.color="red";
+}
+function mouseUp(){
+document.getElementById("myP").style.color="blue";
+}
+*/
