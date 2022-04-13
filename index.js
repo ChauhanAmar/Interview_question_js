@@ -701,3 +701,21 @@ function mouseUp(){
 document.getElementById("myP").style.color="blue";
 }
 */
+
+
+//Keyboard event
+
+onkeypress
+onkeydown
+onkeyup
+
+
+//input events 
+radio button and check box
+
+
+//Timing base event
+setTimeout()
+setInterval
+clearTimeout
+clearInterval
